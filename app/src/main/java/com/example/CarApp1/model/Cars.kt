@@ -1,0 +1,83 @@
+package com.example.CarApp1.model
+
+data class Cars(val id: String,
+                 val title: String,
+                 val year: String,
+                 val inventor: String,
+                 val poster: String,
+                val price: String,
+                val specification: List<String>,
+                 val images: List<String>,
+                 val rating: String)
+
+fun getMovies(): List<Cars> {
+    return listOf(
+        Cars(id = "tt0499549",
+            title = "NISSAN GTR R35 NISMO",
+            year = "2020",
+            inventor = "Kazutoshi Mizuno",
+
+            price = "RM956,930 (MSRP)",
+            poster = "https://paultan.org/image/2019/04/2020-Nissan-GT-R-NISMO-18.jpg",
+            images = listOf("https://paultan.org/image/2019/04/2020-Nissan-GT-R-NISMO-2.jpg",
+                "https://paultan.org/image/2019/04/2020-Nissan-GT-R-NISMO-3.jpg",
+                "https://paultan.org/image/2019/04/2020-Nissan-GT-R-NISMO-4.jpg",
+                "https://paultan.org/image/2019/04/2020-Nissan-GT-R-NISMO-5.jpg",
+                "https://paultan.org/image/2019/04/2020-Nissan-GT-R-NISMO-7.jpg"),
+            specification = listOf("Engine Twin-Turbocharged 3.8-Liter V6.",
+                "Output 600 Horsepower / 481 Pound-Feet.",
+                "Transmission 6-Speed Dual-Clutch Automatic.",
+                "Drive Type All-Wheel Drive.",
+                "Speed 0-60 MPH 2.9 Seconds.",
+                "Maximum speed 205 MPH.",
+                "Efficiency 16 City / 22 Highway / 19 Combined.",
+                "Weight 3,865 Pounds."),
+            rating = "Safety rating 4/5 EURONCAP"),
+
+        Cars(id = "tt0416449",
+            title = "TOYOTA GR86",
+            year = "2023",
+            inventor = "Tetsuya Tada",
+            price = "RM305,000,00 (MSRP)",
+            specification = listOf("Boxer 4-Cylinder, 16-valve, DOHC",
+                "2.4L Engine",
+                "237 PS / 7,000 RPM",
+            "250 Nm / 3,700 RPM",
+                "6-speed Automatic with Paddle Shifter",
+                ),
+            poster = "https://paultan.org/image/2023/02/2023_Toyota_GR_86_Malaysia-1.jpg",
+            images = listOf("https://paultan.org/image/2023/02/2023_Toyota_GR_86_Malaysia_Ext-2.jpg",
+                "https://paultan.org/image/2023/02/2023_Toyota_GR_86_Malaysia_Ext-3.jpg",
+                "https://paultan.org/image/2023/02/2023_Toyota_GR_86_Malaysia_Ext-4.jpg",
+                "https://paultan.org/image/2023/02/2023_Toyota_GR_86_Malaysia_Ext-5.jpg",
+                "https://paultan.org/image/2023/02/2023_Toyota_GR_86_Malaysia_Ext-6.jpg",
+                "https://paultan.org/image/2023/02/2023_Toyota_GR_86_Malaysia_Ext-7.jpg",
+                "https://paultan.org/image/2023/02/2023_Toyota_GR_86_Malaysia_Ext-8.jpg",
+
+            ),
+            rating = "Safety rating 4/5"),
+
+        Cars(id = "tt0848228",
+            title = "Mitsubishi Lancer Evolution 9",
+            year = "2007",
+            inventor = "Tommi Maikinen",
+            price = "RM178,464.07 (MSRP)",
+            specification = listOf(" Engine 4G63T 2.0L 16V Turbo 6MT (280 HP)",
+                "6-speed manual",
+                "Weight 1485kg/3274lb",
+            "290 PS has a maximum torque of 392 Nm / 289 lb-ft."),
+            poster = "https://paultan.org/media.paultan.org/evo9pics/evo9-5-large.jpg",
+            images = listOf("https://paultan.org/media.paultan.org/evo9pics/evo9-6-large.jpg",
+                "https://paultan.org/media.paultan.org/evo9pics/evo9-4-large.jpg",
+                "https://paultan.org/media.paultan.org/evo9pics/evo9-3-large.jpg",
+                "https://paultan.org/media.paultan.org/evo9pics/evo9-1-large.jpg",
+                "https://paultan.org/media.paultan.org/evo9pics/evo9-9-large.jpg",
+                "https://paultan.org/media.paultan.org/evo9pics/evo9-10-large.jpg",
+                "https://paultan.org/media.paultan.org/evo9pics/evo9-11-large.jpg",
+            ) ,
+            rating = "Safety rating 4/5 NHTSA RATING"),
+
+
+
+        )
+}
